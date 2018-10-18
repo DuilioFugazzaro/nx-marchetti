@@ -1,0 +1,391 @@
+/*
+Theme Name: NX
+Theme URI:
+Author: Andrea Marchetti
+Author URI:
+Description: Starter Theme with Font Awesome and Bootstrap 4
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, sticky-post, translation-ready
+Text Domain: nx
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.admin-bar .navbar{top:32px;}
+
+/* General
+-------------------------------------------------------- */
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding-top: 70px;
+  font-family: 'Montserrat';
+}
+body.navbar-transparent{padding-top: 0;}
+
+.main-content{
+  flex:1;
+}
+
+a{color:#00CCC2}
+
+/* code added After v1.0 */
+/*
+.bg-primary{background: #333!important;}
+.page p,
+.post p{font-weight: 300;}
+.page blockquote,
+.post blockquote{ border-left: 10px solid #00CCC2; padding-left: 20px; font-style: italic; font-weight: 200;font-size: 22px;margin:40px 0}
+*/
+/* finish code added After v1.0 */
+
+
+
+/* Helpers
+-------------------------------------------------------- */
+
+.margin-bottom{margin-bottom: 40px;}
+.animate{
+  webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.brown{color:#4A4343}
+
+
+/* Buttons
+-------------------------------------------------------- */
+
+.btn-outline-light{text-transform: uppercase;font-size: 16px;padding: 15px 30px;}
+.btn-outline-light:hover{
+  border: 1px solid transparent;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#03c4b4+0,85bc0d+100 */
+  background: #03c4b4; /* Old browsers */
+  background: -moz-linear-gradient(left, #03c4b4 0%, #85bc0d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #03c4b4 0%,#85bc0d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #03c4b4 0%,#85bc0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c4b4', endColorstr='#85bc0d',GradientType=1 ); /* IE6-9 */
+}
+
+.btn-primary{
+  text-transform: uppercase;font-size: 16px;padding: 15px 30px;
+  border: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#03c4b4+0,85bc0d+100 */
+  background: #03c4b4; /* Old browsers */
+  background: -moz-linear-gradient(left, #03c4b4 0%, #85bc0d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #03c4b4 0%,#85bc0d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #03c4b4 0%,#85bc0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c4b4', endColorstr='#85bc0d',GradientType=1 ); /* IE6-9 */
+}
+.btn-primary:hover{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#039e9b+0,11d7ff+100 */
+  background: #039e9b; /* Old browsers */
+  background: -moz-linear-gradient(left, #039e9b 0%, #11d7ff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #039e9b 0%,#11d7ff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #039e9b 0%,#11d7ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#039e9b', endColorstr='#11d7ff',GradientType=1 ); /* IE6-9 */
+}
+
+/* Utilities
+-------------------------------------------------------- */
+
+.trattino{
+  width:100px;
+  height:4px;
+  margin-bottom: 20px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#03c4b4+0,85bc0d+100 */
+  background: #03c4b4; /* Old browsers */
+  background: -moz-linear-gradient(left, #03c4b4 0%, #85bc0d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #03c4b4 0%,#85bc0d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #03c4b4 0%,#85bc0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c4b4', endColorstr='#85bc0d',GradientType=1 ); /* IE6-9 */
+
+}
+
+/* Menu
+-------------------------------------------------------- */
+.navbar-transparent .bg-primary{background: transparent!important;}
+.navbar-transparent.is-scrolled .bg-primary{background: rgba(0,0,0, 0.5)!important;}
+.navbar-transparent.is-scrolled .navbar-brand {width:40px;display: inline-block;}
+
+.navbar-brand {width:100px;}
+.navbar-brand img {width:90%;}
+.nav-link{text-transform: uppercase;font-size: 13px;}
+
+.form-control{background: transparent;border: none;}
+.icon-search{color:#fff!important;background: transparent; border:none;font-size: 26px; margin-right: 10px}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff!important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff!important;
+}
+
+.navbar-social a{display: inline-block;color:#fff; font-size: 20px;padding: 10px;}
+
+
+
+
+/* Slider
+-------------------------------------------------------- */
+.carousel,
+.carousel-inner,
+.carousel-item{height: 700px;}
+
+.slider-big h3{font-size: 60px;font-weight: bold;max-width: 700px;}
+.slider-big .carousel-text p{font-weight: 200;font-size: 22px;max-width: 700px;}
+.slider-big .carousel-caption{width:100%; left:0; right:0;}
+
+/* Focus
+-------------------------------------------------------- */
+
+.focuses{margin-top:40px; margin-bottom:40px}
+.focus {border-left: 4px solid #4A4343;margin-bottom: 20px}
+.focus h3 {font-size: 24px;}
+.focus h3 a{color:#333;}
+.focus .text-link{font-size: 12px;color:#333;}
+.focus .text-intro{font-size: 12px; margin-bottom: 5px;text-transform: uppercase;opacity: 0.5}
+
+
+/* Two Columns (Pre Evidenza)
+-------------------------------------------------------- */
+.two-columns{margin-top: 80px}
+.two-columns-title{font-size: 40px;color:#4A4343; font-weight: bold;line-height: 42px}
+.two-columns p{font-weight: 300;}
+
+
+/* Card
+-------------------------------------------------------- */
+.card-cover{border-radius:0;min-height: 400px;padding:30px;position: relative;}
+.card-cover a{color:#fff; text-decoration: none;}
+.card-cover .card-title{font-size: 12px;text-transform: uppercase;opacity:0.7; font-weight: 300;}
+.card-cover .card-text{font-size: 26px;line-height: 28px;max-width: 290px}
+.card-cover .card-link{position: absolute;bottom:10px; right:30px;}
+
+
+/* Two Blockquote
+-------------------------------------------------------- */
+.two-blockquote{margin-top: 100px; margin-bottom: 100px;}
+.two-blockquote p{font-weight: 300;}
+
+.two-blockquote blockquote{ border-left: 10px solid #02EEE3; padding-left: 20px;}
+.two-blockquote blockquote strong{font-size: 40px; font-weight: bold;}
+.two-blockquote blockquote:nth-child(1){ border-left: 10px solid #A8EE12; padding-left: 20px;}
+
+
+/* Testimonilas
+-------------------------------------------------------- */
+.testimonials blockquote{font-size: 44px;color:#4A4343;font-weight: bold;line-height: 46px;}
+.testimonials a{font-weight: bold;}
+.testimonials blockquote:before{
+  content: "\201c";
+  font-size: 150px;
+  position: absolute;
+  top:-20px;
+  left: -50px;
+  font-family: georgia;
+  color:#ddd;
+}
+
+/* Call to action box
+-------------------------------------------------------- */
+
+.call-to-action-box{text-align: center;padding: 200px 0}
+.cta-title{font-size: 56px;font-weight: bold;}
+.cta-text{font-weight: 300;max-width: 700px; margin: 0 auto;}
+
+/* Card News
+-------------------------------------------------------- */
+.card-news {border:0;}
+.card-news .card-meta a{text-transform: uppercase;font-weight: bold;}
+.card-news .card-title{color:#4A4343;font-size: 26px;font-weight: bold;}
+.card-news a:hover{text-decoration: none;}
+.card-news .card-text{font-weight: 300}
+.card-news .card-info{border-top:1px solid #ddd; color:#999;padding-top: 10px;font-size: 12px;}
+
+
+
+
+
+/* Comments
+-------------------------------------------------------- */
+#comments{margin-bottom: 40px;}
+.comments{padding-top: 40px;}
+.comments textarea{width: 100%;}
+.comments label{ min-width: 80px;}
+.comments ul,
+.comments ol{list-style-type: none;}
+.comment-author img{border-radius: 999px; width:50px;}
+.comment .reply{border-bottom:  1px solid #ccc; margin-bottom: 30px;padding-bottom: 10px;}
+
+
+/* Input & textarea
+-------------------------------------------------------- */
+input,
+textarea{padding: 5px 10px; border: 1px solid #ccc}
+
+
+/* Widgets
+-------------------------------------------------------- */
+.widget_search .screen-reader-text{display: block;}
+.widget_search #s{width:70%;float:left;}
+.widget_search #searchsubmit{width:30%;float:left;background: #fff;}
+
+
+/* pagination
+-------------------------------------------------------- */
+.pagination{margin-bottom:40px}
+.page-numbers{display: inline-block;padding: 10px 15px;border: 1px solid #ddd;margin-right:4px;}
+
+
+
+/* --------------------------------------------------------
+Tablet
+-------------------------------------------------------- */
+@media (max-width:998px){
+  .home .bg-primary{background: #333!important;}
+  .navbar-social{ flex-direction: row;}
+}
+
+/* --------------------------------------------------------
+Smartphone
+-------------------------------------------------------- */
+
+@media (max-width:767px){
+
+  .slider-big h3{font-size: 40px;}
+
+}
+
+
+
+
+
+/* general wordpress style
+-------------------------------------------------------- */
+.post img{max-width: 100%; height:auto;}
+
+
+
+/* WordPress Core Styles
+-------------------------------------------------------------- */
+ .gallery-caption{padding:5px; font-size: 10px;}
+ .bypostauthor{border-left: 3px solid #ddd;padding-left: 20px;}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
